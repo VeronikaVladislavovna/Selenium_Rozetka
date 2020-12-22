@@ -1,0 +1,480 @@
+{
+  "id": "98a23808-a2a6-49a4-b5be-be3941ad2dc4",
+  "version": "2.0",
+  "name": "Homework_12_rozetka",
+  "url": "https://rozetka.com.ua/",
+  "tests": [{
+    "id": "476a05a3-d023-4b38-a1fd-04256397b49e",
+    "name": "Check the Searching field functionality with spec.symbols",
+    "commands": [{
+      "id": "f9b3014b-f5d7-4694-a255-553712ee407c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "569e296f-a29b-47ff-84ad-237530625408",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3c2f333-9f87-4a4d-be99-c0825028bca1",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "321c395f-8f30-4c55-b5a3-07ef1f8350a2",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "s.msung"
+    }, {
+      "id": "53c4c1f6-0212-4c01-981a-c74a6fd4fe1b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.search-form__submit",
+      "targets": [
+        ["css=.search-form__submit", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Найти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8d019bde-f77d-402f-8571-a5d529e82664",
+    "name": "Check adding the item to the cart from vehicle details page",
+    "commands": [{
+      "id": "6e0492da-d287-48a3-9538-9595a0619e0a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1896c9b9-4cab-4fff-8d45-8b38d256c380",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d7e0c3b-d29a-4a78-8f90-b90755ff8a11",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d23be1b0-2269-4eb7-8d42-1b86e921bf63",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "logitech g102"
+    }, {
+      "id": "577c26d7-a8a5-4d89-b942-e2c18f5e92aa",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.search-form__submit",
+      "targets": [
+        ["css=.search-form__submit", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Найти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c92b6e4-11a1-418c-9de0-dbd0ac217c52",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.catalog-grid__cell:nth-child(1) .goods-tile__title",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .goods-tile__title", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Мышь Logitech G102 Lightsync USB Blue (910-005801)')]", "xpath:innerText"]
+      ],
+      "value": "Мышь Logitech G102 Prodigy USB Black (910-004939)"
+    }, {
+      "id": "c92b7bb4-153e-43d3-b1f7-17e12230d14b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.catalog-grid__cell:nth-child(2) .goods-tile__title",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(2) .goods-tile__title", "css:finder"],
+        ["xpath=//li[2]/app-goods-tile-default/div/div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Мышь Logitech G102 Prodigy USB Black (910-004939)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3767e02-52ae-494c-852b-ebd683b88bb0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.button_size_large",
+      "targets": [
+        ["css=.button_size_large", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//app-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": "Купить"
+    }, {
+      "id": "e5e01f20-fa79-4e14-9254-62b7700d6466",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.button_with_icon > .buy-button__label",
+      "targets": [
+        ["css=.button_with_icon > .buy-button__label", "css:finder"],
+        ["xpath=//app-buy-button/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3063ba69-7d35-4723-8a39-0d08f519805b",
+    "name": "Check adding the item to the cart from search result page",
+    "commands": [{
+      "id": "e3de8004-acde-45f9-a997-f075711a6790",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb9b433f-5b32-490e-87ed-1a93c5a4dd6d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21175bbf-d867-4086-b1d4-6abbde852b05",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80b09b97-730a-4207-b281-9534f02819ed",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "logitech g102"
+    }, {
+      "id": "7c9fa1ea-b0f8-4d01-9205-e433f49b5fba",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.search-form__submit",
+      "targets": [
+        ["css=.search-form__submit", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Найти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb157fcb-d421-4ff5-89da-f0042ecb7f7e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.catalog-grid__cell:nth-child(1) .goods-tile__title",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .goods-tile__title", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Мышь Logitech G102 Lightsync USB Blue (910-005801)')]", "xpath:innerText"]
+      ],
+      "value": "Мышь Logitech G102 Lightsync USB Blue (910-005801) "
+    }, {
+      "id": "4fc56aeb-aa44-4f73-b5fb-a1ecd6bf8e63",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.catalog-grid__cell:nth-child(1) .goods-tile__prices svg",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .goods-tile__prices svg", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7250a52a-7ea4-4e34-a22d-beb700c2e721",
+    "name": "Check the authorization from the \"Oформление заказа\" page with the invalid email ",
+    "commands": [{
+      "id": "6ba3a797-61fc-4af5-bf96-12fc0f650c9b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3534ef9-bc22-44fd-833f-9ecd0f295c49",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header-actions__button_type_basket use",
+      "targets": [
+        ["css=.header-actions__button_type_basket use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9159dbcd-fcf7-412a-a62f-fb25b7f9f560",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.header-actions__button_type_basket > svg",
+      "targets": [
+        ["css=.header-actions__button_type_basket > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f638fd9d-a0be-4ea0-9885-2ffa521f00de",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.button_size_large",
+      "targets": [
+        ["css=.button_size_large", "css:finder"],
+        ["xpath=//a[contains(text(),'Оформить заказ')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua//checkout/')]", "xpath:href"],
+        ["xpath=//rz-shopping-cart/div/div/div/a", "xpath:position"]
+      ],
+      "value": "Оформить заказ"
+    }, {
+      "id": "8462603d-6e91-4906-851f-7b94ce6d2175",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.button_size_large",
+      "targets": [
+        ["css=.button_size_large", "css:finder"],
+        ["xpath=//a[contains(text(),'Оформить заказ')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua//checkout/')]", "xpath:href"],
+        ["xpath=//rz-shopping-cart/div/div/div/a", "xpath:position"]
+      ],
+      "value": "Оформить заказ"
+    }, {
+      "id": "233f4d06-146c-4108-8865-40a1cff49827",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.chips__item:nth-child(2) > .chips__button",
+      "targets": [
+        ["css=.chips__item:nth-child(2) > .chips__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//li[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Я постоянный клиент')]", "xpath:innerText"]
+      ],
+      "value": "Я постоянный клиент"
+    }, {
+      "id": "f3b7f838-b92e-41da-9fce-1f30613e7cf3",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=auth_email",
+      "targets": [
+        ["id=auth_email", "id"],
+        ["css=#auth_email", "css:finder"],
+        ["xpath=//input[@id='auth_email']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad9c2f21-bba7-4e40-b147-a71d13bddcbb",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=auth_email",
+      "targets": [
+        ["id=auth_email", "id"],
+        ["css=#auth_email", "css:finder"],
+        ["xpath=//input[@id='auth_email']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4591af1-c027-4705-ab18-e1e19dbdafd9",
+      "comment": "",
+      "command": "type",
+      "target": "id=auth_email",
+      "targets": [
+        ["id=auth_email", "id"],
+        ["css=#auth_email", "css:finder"],
+        ["xpath=//input[@id='auth_email']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "testtest9@gmail.com"
+    }, {
+      "id": "9f18279e-cfca-49eb-a5bc-7da0b2027713",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=auth_pass",
+      "targets": [
+        ["id=auth_pass", "id"],
+        ["css=#auth_pass", "css:finder"],
+        ["xpath=//input[@id='auth_pass']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15aaee3f-1df3-4438-a977-cb647be34a50",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=auth_pass",
+      "targets": [
+        ["id=auth_email", "id"],
+        ["css=#auth_email", "css:finder"],
+        ["xpath=//input[@id='auth_email']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54f24432-0e12-415d-9218-c5c3547f3783",
+      "comment": "",
+      "command": "type",
+      "target": "id=auth_pass",
+      "targets": [
+        ["id=auth_email", "id"],
+        ["css=#auth_email", "css:finder"],
+        ["xpath=//input[@id='auth_email']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "6494d4e5-4fad-4094-8a5c-18b83bf7ffa2",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.auth-modal__submit",
+      "targets": [
+        ["css=.auth-modal__submit", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "Войти"
+    }, {
+      "id": "83a2daa7-e781-4d25-a042-fc69ecb773d1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header-topline__user-link",
+      "targets": [
+        ["css=.header-topline__user-link", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//p/button", "xpath:position"],
+        ["xpath=//button[contains(.,'войдите в личный кабинет')]", "xpath:innerText"]
+      ],
+      "value": "войдите в личный кабинет"
+    }]
+  }, {
+    "id": "2dcf2ea6-f947-4d98-b827-1b6e515a9e6e",
+    "name": "Check the deleting item from the Cart",
+    "commands": [{
+      "id": "46bdc0e0-415b-488f-ba7c-7b2e1ba587e5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2dd3aed9-bcc9-4209-8e35-21e973748718",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header-actions__button_type_basket use",
+      "targets": [
+        ["css=.header-actions__button_type_basket use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b65613d7-9485-4153-9df3-e2cec9e3ad8f",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.header-actions__button_type_basket > svg",
+      "targets": [
+        ["css=.header-actions__button_type_basket > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad99037f-1c90-40f3-bdf4-0062bc81a16a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.cart-list__item:nth-child(2)",
+      "targets": [
+        ["css=.cart-list__item:nth-child(2)", "css:finder"],
+        ["xpath=//rz-shopping-cart/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": "Мышь Logitech G102 Lightsync USB Blue (910-005801) "
+    }, {
+      "id": "089e2eec-fc42-41c9-9f39-b9bf416e56d7",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=cartProductActions1",
+      "targets": [
+        ["id=cartProductActions1", "id"],
+        ["css=#cartProductActions1", "css:finder"],
+        ["xpath=//button[@id='cartProductActions1']", "xpath:attributes"],
+        ["xpath=//li[2]/rz-cart-product/div/div/rz-context-menu/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "473a697a-9b02-452d-854a-31695675852c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.button--medium",
+      "targets": [
+        ["css=.button--medium", "css:finder"],
+        ["xpath=(//button[@type='button'])[95]", "xpath:attributes"],
+        ["xpath=//ul[@id='cartProductActions1']/li/rz-trash-icon/button", "xpath:idRelative"],
+        ["xpath=//rz-trash-icon/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Удалить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "29de7bbd-ee75-4382-86fc-07987fd3328d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["476a05a3-d023-4b38-a1fd-04256397b49e"]
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}
